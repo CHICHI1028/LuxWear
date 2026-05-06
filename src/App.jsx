@@ -710,7 +710,7 @@ export default function LuxWear() {
                   <div>
                     <div style={{ fontSize: 10, color: "rgba(212,175,55,0.7)", ...MF, letterSpacing: 1, marginBottom: 8 }}>PHOTOS SUPPLÉMENTAIRES <span style={{ color: T.textFaint, fontWeight: 400 }}>({(newProduct.images||[]).length} ajoutée{(newProduct.images||[]).length>1?"s":""})</span></div>
                     {(newProduct.images||[]).map((img,i) => <div key={i} style={{ display: "flex", gap: 8, marginBottom: 8, alignItems: "center" }}><input className="if" placeholder={`https://i.ibb.co/... photo ${i+2}`} value={img} onChange={e => setNewProduct(p=>({...p,images:p.images.map((x,j)=>j===i?e.target.value:x)}))} style={{ flex: 1 }} /><button onClick={() => setNewProduct(p=>({...p,images:p.images.filter((_,j)=>j!==i)}))} style={{ background: "rgba(255,80,80,0.1)", border: "1px solid rgba(255,80,80,0.3)", color: "#ff6060", width: 32, height: 32, borderRadius: "50%", cursor: "pointer", fontSize: 14, flexShrink: 0 }}>✕</button></div>)}
-                    <button onClick={() => setNewProduct(p=>({...p,images:[...(p.images||[]),""]})} style={{ width: "100%", padding: "9px 0", borderRadius: 20, border: "1.5px dashed rgba(212,175,55,0.35)", background: "transparent", color: "#d4af37", cursor: "pointer", ...MF, fontSize: 12, fontWeight: 600 }}>＋ Ajouter une photo</button>
+                    <button onClick={() => setNewProduct(p=>({...p,images:[...(p.images||[]),""]})) } style={{ width: "100%", padding: "9px 0", borderRadius: 20, border: "1.5px dashed rgba(212,175,55,0.35)", background: "transparent", color: "#d4af37", cursor: "pointer", ...MF, fontSize: 12, fontWeight: 600 }}>＋ Ajouter une photo</button>
                   </div>
 
                   <div>
