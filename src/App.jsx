@@ -4,7 +4,7 @@ import { collection, addDoc, getDocs, updateDoc, deleteDoc, doc, onSnapshot, que
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, updateProfile } from "firebase/auth";
 
 const CONFIG = {
-  ADMIN_PASSWORD: "chichiracha101228@",
+  ADMIN_PASSWORD: "chichi101428@",
   OWNER_EMAIL: "luxwear.dz@gmail.com",
   INSTAGRAM: "https://www.instagram.com/luxwear_dz?igsh=M2w1bHhnNG8xMXBu&utm_source=qr",
   TIKTOK: "https://www.tiktok.com/@luxwear.dz?_r=1&_t=ZS-95emqC486Z0",
